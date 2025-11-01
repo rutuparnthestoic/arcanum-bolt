@@ -88,10 +88,10 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-16">Arcanum Founder & CEO</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-purple-400">Mark J. Streeting</h3>
+              <h3 className="text-2xl font-bold mb-4 text-purple-400">Mark J. Stradling</h3>
               <div className="space-y-4 text-gray-300 leading-relaxed text-sm">
                 <p>
-                  Originally from Hampton, Yorkshire in the UK, Mark Streeting has lived and worked in
+                  Originally from Hampton, Yorkshire in the UK, Mark J. Stradling has lived and worked in
                   Asia over 35 years, primarily in Singapore, Malaysia and Hong Kong.
                 </p>
                 <p>
@@ -116,7 +116,13 @@ function App() {
             <div className="flex justify-center">
               <div className="w-80 h-96 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden">
                 <div className="w-full h-full flex items-end justify-center p-8">
-                  <div className="w-full h-full bg-gradient-to-t from-purple-900/30 to-transparent"></div>
+                  <div className="w-full h-full">
+                    <img
+                      src="/public/mark.jpeg"
+                      alt="Mark J. Stradling"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
