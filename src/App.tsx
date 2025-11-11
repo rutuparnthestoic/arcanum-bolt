@@ -6,14 +6,17 @@ function App() {
       <nav className="fixed top-0 w-full bg-black/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-600 rounded"></div>
-              <span className="text-xl font-bold">ARCANUM</span>
+            <div className="flex items-center space-x-2 flex-shrink-0">
+              <img
+                src="/colored-logo.png"
+                alt="Arcanum logo"
+                className="w-48 h-12 object-contain"
+              />
             </div>
             <div className="flex items-center space-x-8 text-sm">
               <a href="#solutions" className="hover:text-purple-400 transition">SOLUTIONS</a>
               <a href="#partners" className="hover:text-purple-400 transition">PARTNERS</a>
-              <a href="#about" className="hover:text-purple-400 transition">ABOUT MARK WITTE</a>
+              <a href="#about" className="hover:text-purple-400 transition">ABOUT MARK</a>
               <a href="#insights" className="hover:text-purple-400 transition">INSIGHTS</a>
               <a href="#gallery" className="hover:text-purple-400 transition">GALLERY</a>
               <a href="#events" className="hover:text-purple-400 transition">EVENTS</a>
@@ -23,8 +26,8 @@ function App() {
         </div>
       </nav>
 
-      <section className="relative min-h-screen flex items-center justify-center pt-20" style={{
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M10 10h80v80H10z" fill="%23111" stroke="%23333" stroke-width="1"/%3E%3C/svg%3E)',
+      <section className="relative min-h-[35vh] flex items-center justify-center pt-20" style={{
+        backgroundImage: 'url(/mainbg.png)',
         backgroundSize: 'cover'
       }}>
         <div className="text-center">
@@ -36,18 +39,18 @@ function App() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-4xl font-bold mb-6">arcanum</h2>
-              <p className="text-purple-400 text-xl mb-4">/'är-kə-nəm/noun</p>
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <h2 className="text-5xl font-bold mb-6">arcanum</h2>
+              <p className="text-secondaryPurple text-3xl mb-4 font-bold">/'är-kə-nəm/noun</p>
+              <p className="text-secondaryPurple mb-6 leading-relaxed text-2xl">
                 a profound secret or mystery known only to a few
               </p>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-secondaryPurple leading-relaxed text-2xl">
                 a secret and powerful remedy: an elixir: specialized knowledge
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-6">WHY We Do WHAT We Do</h3>
-              <div className="space-y-6 text-gray-300 leading-relaxed">
+              <h3 className="text-2xl text-primaryYellow font-bold mb-6">WHY We Do WHAT We Do</h3>
+              <div className="space-y-6 text-white leading-relaxed">
                 <p>
                   Arcanum exists to help change in today's rapidly and radically ever faster pace of change.
                   We're living about a substantial change, our fastest in accelerating "tomorrow's" what capabilities change across ever two business frontiers".
@@ -75,7 +78,7 @@ function App() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-purple-900 to-purple-700 py-24">
+      <section className="bg-primaryPurple py-24">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
             If you can picture it and it does not work that's OK. But if you can't picture it, it's not going to happen.
@@ -85,11 +88,11 @@ function App() {
 
       <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">Arcanum Founder & CEO</h2>
+          <h2 className="text-5xl font-bold text-center mb-16">Arcanum Founder & CEO</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-purple-400">Mark J. Stradling</h3>
-              <div className="space-y-4 text-gray-300 leading-relaxed text-sm">
+              <h3 className="text-2xl font-bold mb-4 text-primaryYellow">Mark J. Stradling</h3>
+              <div className="space-y-4 text-white leading-relaxed text-md">
                 <p>
                   Originally from Hampton, Yorkshire in the UK, Mark J. Stradling has lived and worked in
                   Asia over 35 years, primarily in Singapore, Malaysia and Hong Kong.
@@ -114,7 +117,7 @@ function App() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-80 h-96 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden">
+              <div className="w-100 h-100 bg-black  rounded-lg overflow-hidden">
                 <div className="w-full h-full flex items-end justify-center p-8">
                   <div className="w-full h-full">
                     <img
@@ -130,27 +133,21 @@ function App() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-purple-900 to-purple-700 py-20">
+      <section className="bg-primaryPurple py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">How to Predict Tomorrow's Problems Today</h2>
+          <h2 className="text-5xl font-bold text-center mb-16">How to Predict Tomorrow's Problems Today</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="w-full h-96 bg-black/30 rounded-lg overflow-hidden flex items-center justify-center">
-                <div className="relative w-64 h-64">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-yellow-600/40 rounded-full blur-xl"></div>
-                  </div>
-                  <div className="relative grid grid-cols-3 gap-4">
-                    {[...Array(9)].map((_, i) => (
-                      <div key={i} className="w-16 h-16 border-2 border-yellow-600/60 rounded-lg bg-yellow-900/20"></div>
-                    ))}
-                  </div>
-                </div>
+                <img 
+                src='/image1.jpeg'
+                className='object-cover'
+                />
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h3 className="text-2xl font-bold mb-6 text-yellow-400">Imagine the Impact on Your Business if You Could!</h3>
-              <div className="space-y-4 text-white leading-relaxed text-sm">
+              <h3 className="text-2xl font-bold mb-6 text-primaryYellow">Imagine the Impact on Your Business if You Could!</h3>
+              <div className="space-y-4 text-white leading-relaxed text-md">
                 <p>
                   An organization given out of day. They progress through necessary lifecycle stages. Each
                   stage has a business organizational, or behavioral of work on organizations structures,
@@ -174,7 +171,7 @@ function App() {
                   profitable than this. makes it "Prime Tomorrow's Problems Now".
                 </p>
               </div>
-              <button className="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full transition">
+              <button className="mt-8 bg-primaryYellow hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full transition">
                 READ MORE
               </button>
             </div>
@@ -183,12 +180,12 @@ function App() {
       </section>
 
       <section className="bg-black py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">Thrive, Don't Just Survive</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto ">
+          <h2 className="text-5xl font-bold text-center mb-16">Thrive, Don't Just Survive</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-yellow-400">Ignite Your Path to Success</h3>
-              <div className="space-y-4 text-gray-300 leading-relaxed text-sm">
+              <h3 className="text-2xl font-bold mb-6 text-primaryYellow">Ignite Your Path to Success</h3>
+              <div className="space-y-4 text-white leading-relaxed text-md">
                 <p>
                   At JUM™ over business's a want to business, your for some, a them becomes in mother's practice
                   experts. Likely, or which has not been driven they can by, a local companies such in Asia
@@ -216,21 +213,17 @@ function App() {
                   through good dives can text
                 </p>
               </div>
-              <button className="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full transition">
+              <button className="mt-8 bg-primaryYellow hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full transition">
                 READ MORE
               </button>
             </div>
             <div className="flex justify-center">
               <div className="w-full h-96 bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-lg overflow-hidden flex items-center justify-center">
-                <div className="relative w-64 h-64">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-blue-600/40 rounded-full blur-xl"></div>
-                  </div>
-                  <div className="relative grid grid-cols-3 gap-4">
-                    {[...Array(9)].map((_, i) => (
-                      <div key={i} className="w-16 h-16 border-2 border-blue-600/60 rounded-lg bg-blue-900/20"></div>
-                    ))}
-                  </div>
+                <div className="relative ">
+                <img 
+                src='/image1.jpeg'
+                className='object-cover'
+                />
                 </div>
               </div>
             </div>
